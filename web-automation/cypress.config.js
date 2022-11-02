@@ -19,7 +19,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://demoqa.com/select-menu",
+    baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
   },
 });
