@@ -1,25 +1,21 @@
 {
   "name": "web-automation-test",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web automation test",
   "main": "index.js",
+  "author": "Kelvin",
   "scripts": {
     "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports",
-    "cypress-open": "node ./node_modules/.bin/cypress open",
-    "cypress-run": "npm run clean:reports && ./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\" --record --key"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "cypress": "^10.11.0",
-    "cypress-cucumber-preprocessor": "^4.3.1",
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.33.1",
     "cypress-file-upload": "^4.0.6",
-    "package.json": "^2.0.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/reports/results",
-      "fileSuffix": ".cucumber"
-    }
+    "esbuild": "^0.15.11",
+    "multiple-cucumber-html-reporter": "^3.0.1"
   }
 }
