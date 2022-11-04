@@ -1,4 +1,4 @@
-# API and Web UI Automated Testing
+# API & Web UI Automated Testing
 
 ## 💻 Pre-requisites
 
